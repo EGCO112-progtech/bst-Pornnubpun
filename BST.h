@@ -131,11 +131,12 @@ void treeOrder( TreeNodePtr treePtr,int p )
    int i;
    if(treePtr != NULL) 
    {
+
       treeOrder( treePtr->rightPtr,p+1 ); //Recursion to the right
 
       for(i=0;i<p;i++) 
       {
-      printf("    ");
+      printf("   ");
       }
 
       printf("%3d\n",treePtr->data); //print the value
